@@ -40,8 +40,8 @@ Simply, run these code lines in your R console. Just copy the lines, paste them 
 
 ```{r}
 # Install and load multiple packages at a time.  This will take 10~15 min if you are installing any packages for the first time.
-# install.packages(c("devtools","usethis","pacman","data.table","dplyr","tidyr","ggplot2","ggpubr","purrr","shiny"), repos="http://cran.us.r-project.org")
-# pacman::p_load(devtools,usethis,pacman,data.table,dplyr,tidyr,ggplot2,ggpubr,purrr,shiny)
+install.packages(c("devtools","usethis","pacman","data.table","dplyr","tidyr","ggplot2","ggpubr","purrr","shiny"), repos="http://cran.us.r-project.org")
+pacman::p_load(devtools,usethis,pacman,data.table,dplyr,tidyr,ggplot2,ggpubr,purrr,shiny)
 ```
 ![InstalldevtoolsPackage](https://github.com/leeoesterreich/DRGEXCOBRA/assets/87338488/bd7864ca-39d7-460f-b378-c06ae45b9c98)
 
@@ -70,13 +70,12 @@ setwd("/DirectoryAddress/YouCopied/FromGetInfo)    # setwd means set Working Dir
 setwd("/Users/sanghoonlee/Library/CloudStorage/OneDrive-UniversityofPittsburgh/H45_ShinyApp_METABRICSCANB_TROP2")
 
 ## Install DRGEXCOBRA This takes 2~5 min depending on your computer spec.  Note you need quotation outside the file name. 
-# install.packages("DRGEXCOBRA_0.0.0.9000.tar.gz")
+install.packages("DRGEXCOBRA_0.0.0.9000.tar.gz")
 
 ## Load your DRGEXCOBRA package. Note you DON'T need quotation. The package name is DRGEXCOBRA, not DRGEXCOBRA_0.0.1.1.tar.gz
 library(DRGEXCOBRA) 
 ```
-
-!Install Dr.GEXCOR package](/Volumes/Expansion/CCBR_XWANGLAB10_original/T88_LeukemiaTREM1_Wei_2023/06d_ShinyApp_Rpackage_Github/InstallDRGEXCOBRA.png)
+![InstallDRGEXCOBRA](https://github.com/leeoesterreich/DRGEXCOBRA/assets/87338488/3f4b110d-6243-476e-9d15-196037759c23)
 
 </br>
   
@@ -91,7 +90,7 @@ Copy the code line below and run it in your R console.
 
 ```{r}
 ## DRGEXCOBRA. It takes about 10 seconds to start a ShinyApp depending on your computer spec.
-# shinyApp(ui=UserInterface, server=ShinySever)
+shinyApp(ui=UserInterface, server=ShinySever)
 ```
 
 For now, you should choose a gene of DNA repair in the Gene Query box. You can't type in your gene of interest. 
